@@ -74,6 +74,7 @@
     <Content Include="Images\Tylerart2 1.png" />
     <Content Include="test.aspx" />
     <Content Include="Web.config" />
+    <Content Include="AddPrecedent.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.Master.cs">
@@ -90,6 +91,13 @@
     </Compile>
     <Compile Include="test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPrecedent.aspx.cs">
+      <DependentUpon>AddPrecedent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPrecedent.aspx.designer.cs">
+      <DependentUpon>AddPrecedent.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
