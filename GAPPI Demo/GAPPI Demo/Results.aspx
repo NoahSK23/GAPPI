@@ -41,7 +41,7 @@
     <hr />
 
     <div class="container">
-        <div class="row">
+        <div class="row pb-5">
             <div class="col-md-2 col-md-push-7">
                 <h5>Fields</h5>
                 <div class="dropdown">
