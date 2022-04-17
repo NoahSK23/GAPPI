@@ -46,7 +46,7 @@
                     <a class="nav-link" href="#">Precedent</a>
                     <a class="nav-link" href="#">About</a>
                     <a class="nav-link" href="#">Contact Us</a>
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="AddPrecedent.aspx">
                         <img src="/Images/Add.png" height="20" alt="Add">
                     </a>
                     <a class="nav-link" href="#">
