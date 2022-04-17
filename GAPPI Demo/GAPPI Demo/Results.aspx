@@ -100,7 +100,7 @@
 
                                 </dl>
                                 <a class="btn btn-primary btn-info btn-sm" href="#">Visit the Site</a>
-                                <a class="btn btn-primary btn-info btn-sm" href="#">See More?</a>
+                                <a class="btn btn-primary btn-info btn-sm" href="Precedent.aspx">See More?</a>
                             </div>
                             <div class="col-sm-3 text-align-center">
                                 <p class="value3 mt-sm">Bookmark</p>
@@ -133,7 +133,7 @@
 
                                 </dl>
                                 <a class="btn btn-primary btn-info btn-sm" href="#">Visit the Site</a>
-                                <a class="btn btn-primary btn-info btn-sm" href="#">See More?</a>
+                                <a class="btn btn-primary btn-info btn-sm" href="Precedent_withImg.aspx">See More?</a>
                             </div>
                             <div class="col-sm-3 text-align-center">
                                 <p class="value3 mt-sm">Bookmark</p>
