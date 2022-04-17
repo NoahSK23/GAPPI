@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+GAPPI Demo/.vs/GAPPI Demo/v16/.suo
+*.cache
