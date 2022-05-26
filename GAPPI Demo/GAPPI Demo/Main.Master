@@ -26,14 +26,15 @@
 
         footer {
             background-color: #222222;
+            width: 100%;
         }
     </style>
-    <title>GAPPI Demo</title>
+    <title>GAPPI</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <form id="form1" runat="server">
+<body class="d-flex flex-column min-vh-100">
+    <form id="form1" class="pb-1" runat="server">
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
             <a class="navbar-brand" href="Home.aspx">
                 <img src="/Images/Logo.png" style="filter: invert(1);" height="30" alt="GAPPI">
@@ -42,7 +43,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
+                <div class="navbar-nav ml-auto" style="text-align: center">
                     <a class="nav-link" href="Home.aspx">Home</a>
                     <a class="nav-link" href="Results.aspx">Precedent</a>
                     <a class="nav-link" href="#">About</a>
@@ -63,11 +64,10 @@
         </div>
     </form>
 
-    <footer class="fixed-bottom">
-        <!-- Copyright -->
+    <footer class="mt-auto">
         <div>
-            <img src="/Images/TULogo.png" class="float-left p-1 pl-5" alt="Temple University" />
-            <img src="/Images/Tylerart2 1.png" class="float-right pt-2 pr-5 pl-1" alt="Tyler Art + Architecture" />
+            <img src="/Images/TULogo.png" class="img-fluid float-left p-1 pl-5" alt="Temple University" />
+            <img src="/Images/Tylerart2 1.png" class="img-fluid float-right pt-2 pr-5 pl-1" alt="Tyler Art + Architecture" />
         </div>
     </footer>
 

@@ -1,36 +1,34 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Precedent_withImg.aspx.cs" Inherits="GAPPI_Demo.Precedent_withImg" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
-        .infolabel{
+        .infolabel {
             color: #899197;
         }
 
-        .container{
+        .container {
             color: #222222;
             font-size: 16px;
             padding: 100px;
         }
 
-        .search{
+        .search {
             margin: 0;
             padding: 0;
             height: 47.5px;
         }
 
-        .padding{
+        .padding {
             padding: 8px 16px;
         }
 
-        #flexcontainer{
+        #flexcontainer {
             display: flex;
             justify-content: space-between;
             width: 70%;
         }
 
-        .border{
+        .border {
             border-color: #899197;
             border-bottom: solid;
         }
@@ -40,11 +38,13 @@
             border-color: #899197;
         }
 
-        #precedentImg{
-            background-color:#C4C4C4;
+        #precedentImg {
+            background-color: #C4C4C4;
         }
-
     </style>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="precedent" class="container-fluid w-100" style="text-align: center;">
         <ul class="nav flex-nowrap justify-content-center align-middle mt-2 p-3">
             <li class="nav-item px-lg-4">
@@ -55,8 +55,8 @@
                     <asp:ListItem>All fields</asp:ListItem>
                 </asp:DropDownList>
             </li>
-            <li class="nav-item">    
-                <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width:450px;">
+            <li class="nav-item">
+                <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width: 450px;">
             </li>
             <li class="nav-item">
                 <asp:ImageButton CssClass="search" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" />
@@ -69,7 +69,7 @@
             </li>
         </ul>
         <div class="solid mb-4"></div>
-        
+
         <div class="d-flex justify-content-center flex-column align-items-center mt-1">
             <div class="d-flex justify-content-between w-75">
                 <div style="text-align: left;">
@@ -98,11 +98,12 @@
                             <asp:Label ID="lblPrecedentName" runat="server" ForeColor="#A41E35"></asp:Label>
                         </div>
                         <div style="text-align: right;">
-                            <label for="bookmark"><img class="p-2" src="/Images/Bookmark.png" height="40">Bookmark</label>
+                            <label for="bookmark">
+                                <img class="p-2" src="/Images/Bookmark.png" height="40">Bookmark</label>
                         </div>
                     </div>
 
-                    <div id="precedentInfo" class="d-flex flex-column justify-content-center w-75"style="text-align: left;">
+                    <div id="precedentInfo" class="d-flex flex-column justify-content-center w-75" style="text-align: left;">
                         <div class="infolabel pt-3">
                             <asp:Label ID="Label1" runat="server" Text="Location:"></asp:Label>
                         </div>
