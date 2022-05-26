@@ -1,37 +1,32 @@
-﻿<%@ Title="GAPPI" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="GAPPI_Demo.Home" %>
+﻿<%@  Title="GAPPI Home" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="GAPPI_Demo.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style>
-
-
-        .container{
+        .container {
             font-size: 24px;
             margin: auto;
             min-height: 100%
         }
 
 
-        .search{
+        .search {
             margin: 0;
             padding: 0;
             height: 47.5px;
-            position:relative;
-
+            position: relative;
         }
-        
-        .boldfont{
-            text-align: left; 
-            font-family: 'Noto Sans-ExtraBold', sans-serif; 
-            font-weight: 900; 
+
+        .boldfont {
+            text-align: left;
+            font-family: 'Noto Sans-ExtraBold', sans-serif;
+            font-weight: 900;
             font-size: 25px;
         }
 
-        .btnSearch{
+        .btnSearch {
             height: 47.5px;
-            position:absolute;
-            right:0;
+            position: absolute;
+            right: 0;
         }
 
         .landing {
@@ -39,9 +34,10 @@
             min-height: calc(100% - 56px);
             padding-top: 7rem;
         }
-
     </style>
+</asp:Content>
 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
@@ -59,10 +55,9 @@
             <h5 class="boldfont text-left mb-4">Search precedents, projects, designers, and more......</h5>
         </div>
         <div class="search row w-100 mb-4">
-            <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width:100%;">
-            <asp:ImageButton CssClass="btnsearch" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" style="height: 47.5px;
-            position:absolute;
-            right:0;" PostBackUrl="~/Results.aspx" />
+            <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width: 100%;">
+            <asp:ImageButton CssClass="btnsearch" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" Style="height: 47.5px; position: absolute; right: 0;"
+                PostBackUrl="~/Results.aspx" />
         </div>
     </div>
 </asp:Content>
