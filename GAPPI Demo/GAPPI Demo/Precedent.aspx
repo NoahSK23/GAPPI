@@ -1,44 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Precedent.aspx.cs" Inherits="GAPPI_Demo.Precedent" %>
+﻿<%@ Page Title="GAPPI Precedent" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Precedent.aspx.cs" Inherits="GAPPI_Demo.Precedent" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-        .infolabel {
-            color: #899197;
-        }
-
-        .container {
-            color: #222222;
-            font-size: 16px;
-            padding: 100px;
-        }
-
-        .search {
-            margin: 0;
-            padding: 0;
-            height: 47.5px;
-        }
-
-        .padding {
-            padding: 8px 16px;
-        }
-
-        #flexcontainer {
-            display: flex;
-            justify-content: space-between;
-            width: 70%;
-        }
-
-        .border {
-            border-color: #899197;
-            border-bottom-width: thick;
-            border-bottom: solid;
-        }
-
-        .solid {
-            border-top: 3px solid;
-            border-color: #899197;
-        }
-    </style>
+    <link href="css/precedent.css" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

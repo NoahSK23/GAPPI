@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div class="h1 font-weight-bold pt-3" style="font-weight: 900;">
+        <div class="h1 pt-3" style="font-weight: 900;">
             Adding Precedents
         </div>
         <div class="form-group">
@@ -37,7 +37,7 @@
         </div>
         <div class="form-group">
             <label for="inputDescription">Descritpion</label>
-            <textarea class="form-control" id="inputDescription" rows="4"></textarea>
+            <textarea class="form-control" style="resize: none;" id="inputDescription" rows="4"></textarea>
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">

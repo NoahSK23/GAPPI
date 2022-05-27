@@ -1,17 +1,7 @@
 ﻿<%@ Page Title="GAPPI Search Results" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Results.aspx.cs" Inherits="GAPPI_Demo.test" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-        .btn:hover {
-            color: #fff
-        }
-
-        .input-text:focus {
-            box-shadow: 0px 0px 0px;
-            border-color: black;
-            outline: 0px
-        }
-    </style>
+    <link href="css/results.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="  text-drak p-3">

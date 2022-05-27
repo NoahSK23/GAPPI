@@ -1,0 +1,9 @@
+﻿.btn:hover {
+    color: #fff
+}
+
+.input-text:focus {
+    box-shadow: 0px 0px 0px;
+    border-color: black;
+    outline: 0px
+}

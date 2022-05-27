@@ -1,0 +1,40 @@
+﻿.infolabel {
+    color: #899197;
+}
+
+.container {
+    color: #222222;
+    font-size: 16px;
+    padding: 100px;
+}
+
+.search {
+    margin: 0;
+    padding: 0;
+    height: 47.5px;
+}
+
+.padding {
+    padding: 8px 16px;
+}
+
+#flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.border {
+    border-color: #899197;
+    border-bottom-width: thick;
+    border-bottom: solid;
+}
+
+.solid {
+    border-top: 3px solid;
+    border-color: #899197;
+}
+
+#precedentImg {
+    background-color: #C4C4C4;
+}

@@ -1,0 +1,26 @@
+﻿@font-face {
+    font-family: 'NotoSans';
+    src: url('../fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('../fonts/Noto_Sans/NotoSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: NotoSans, sans-serif;
+}
+
+.navbar-custom {
+    background-color: #A41E35;
+}
+
+footer {
+    background-color: #222222;
+    width: 100%;
+}

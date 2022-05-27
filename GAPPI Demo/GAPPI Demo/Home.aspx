@@ -1,40 +1,7 @@
 ﻿<%@  Title="GAPPI Home" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="GAPPI_Demo.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-        .container {
-            font-size: 24px;
-            margin: auto;
-            min-height: 100%
-        }
-
-
-        .search {
-            margin: 0;
-            padding: 0;
-            height: 47.5px;
-            position: relative;
-        }
-
-        .boldfont {
-            text-align: left;
-            font-family: 'Noto Sans-ExtraBold', sans-serif;
-            font-weight: 900;
-            font-size: 25px;
-        }
-
-        .btnSearch {
-            height: 47.5px;
-            position: absolute;
-            right: 0;
-        }
-
-        .landing {
-            min-height: 100%;
-            min-height: calc(100% - 56px);
-            padding-top: 7rem;
-        }
-    </style>
+    <link href="css/home.css" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
