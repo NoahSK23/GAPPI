@@ -74,6 +74,8 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\home.css" />
+    <Content Include="css\precedent.css" />
+    <Content Include="css\results.css" />
     <Content Include="css\site.css" />
     <Content Include="fonts\Noto_Sans\OFL.txt" />
     <Content Include="Home.aspx" />
