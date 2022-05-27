@@ -22,29 +22,38 @@
             <a class="navbar-brand" href="Home.aspx">
                 <img src="/Images/Logo.png" style="filter: invert(1);" height="30" alt="GAPPI">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto" style="text-align: center">
-                    <a class="nav-link" href="Home.aspx">Home</a>
-                    <a class="nav-link" href="Results.aspx">Precedent</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Contact Us</a>
-                    <a class="nav-link" href="AddPrecedent.aspx">
-                        <img src="/Images/Add.png" height="20" alt="Add">
-                    </a>
-                    <a class="nav-link" href="#">
-                        <img src="/Images/Avatar.png" height="30" alt="Avatar">
-                    </a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="text-align: center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.aspx">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Results.aspx">Precedent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AddPrecedent.aspx">
+                            <img src="/Images/Add.png" height="20" alt="Add">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="/Images/Avatar.png" height="30" alt="Avatar">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
-
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
     </form>
 
     <footer class="mt-auto">
@@ -54,10 +63,18 @@
         </div>
     </footer>
 
-
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            $(".nav-item").each(function () {
+                var navLink = $(this).children().attr('href');
+                if (window.location.pathname.toLowerCase().search(navLink.toLowerCase()) >= 0) {
+                    $(this).addClass("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
