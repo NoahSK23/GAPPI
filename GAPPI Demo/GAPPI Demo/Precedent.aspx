@@ -8,7 +8,7 @@
     <div id="precedent" class="container-fluid w-100" style="text-align: center;">
         <ul class="nav flex-nowrap justify-content-center align-middle mt-2 p-3">
             <li class="nav-item px-lg-4">
-                <label id="lblSearch" style="text-align: left; font-family: 'Noto Sans-ExtraBold', sans-serif; font-weight: 900; font-size: 27px;">Search</label>
+                <label id="lblSearch" style="text-align: left; font-weight: 900; font-size: 27px;">Search</label>
             </li>
             <li class="nav-item">
                 <asp:DropDownList CssClass="search" ID="ddlSeachField" runat="server" Style="width: 200px;">
@@ -48,7 +48,7 @@
             </div>
             <div class="solid w-75 mt-4"></div>
             <div class="d-flex justify-content-between w-75 mt-3">
-                <div style="text-align: left; font-family: 'Noto Sans-ExtraBold', sans-serif; font-weight: 900; font-size: 40px;">
+                <div style="text-align: left; font-weight: 900; font-size: 40px;">
                     <asp:Label ID="lblPrecedentName" runat="server" ForeColor="#A41E35"></asp:Label>
                 </div>
                 <div style="text-align: right;">
