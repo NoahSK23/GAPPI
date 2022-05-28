@@ -77,7 +77,7 @@
     <Content Include="css\precedent.css" />
     <Content Include="css\results.css" />
     <Content Include="css\site.css" />
-    <Content Include="Home.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Images\Add.png" />
     <Content Include="Images\Avatar.png" />
     <Content Include="Images\BackArrow.png" />
@@ -99,12 +99,12 @@
     <Content Include="AddPrecedent.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
