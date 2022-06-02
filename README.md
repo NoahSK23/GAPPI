@@ -1,4 +1,4 @@
-# GAPPI-demo
+# GAPPI
 Changes that need to be made
 
 - [x] Change footer from fixed bottom to just bottom of page
