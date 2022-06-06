@@ -1,4 +1,4 @@
-﻿<%@  Title="GAPPI Home" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GAPPI_Demo.Home" %>
+﻿<%@  Title="GAPPI Home" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GAPPI.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/home.css" rel="stylesheet" />

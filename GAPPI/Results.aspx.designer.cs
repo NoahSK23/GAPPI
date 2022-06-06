@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace GAPPI_Demo
+namespace GAPPI
 {
     public partial class test
     {

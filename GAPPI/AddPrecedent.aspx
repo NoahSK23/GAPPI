@@ -1,4 +1,4 @@
-﻿<%@ Page Title="GAPPI Add Precedent" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="AddPrecedent.aspx.cs" Inherits="GAPPI_Demo.WebForm1" %>
+﻿<%@ Page Title="GAPPI Add Precedent" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="AddPrecedent.aspx.cs" Inherits="GAPPI.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>

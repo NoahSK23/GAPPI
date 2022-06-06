@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GAPPI_Demo
+namespace GAPPI
 {
     public partial class Home : System.Web.UI.Page
     {
