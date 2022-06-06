@@ -1,4 +1,4 @@
-﻿<%@ Page Title="GAPPI Search Results" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Results.aspx.cs" Inherits="GAPPI_Demo.test" %>
+﻿<%@ Page Title="GAPPI Search Results" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Results.aspx.cs" Inherits="GAPPI.test" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/results.css" rel="stylesheet" />

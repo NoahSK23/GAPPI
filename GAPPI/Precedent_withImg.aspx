@@ -1,4 +1,4 @@
-﻿<%@ Page Title="GAPPI Precedent" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Precedent_withImg.aspx.cs" Inherits="GAPPI_Demo.Precedent_withImg" %>
+﻿<%@ Page Title="GAPPI Precedent" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Precedent_withImg.aspx.cs" Inherits="GAPPI.Precedent_withImg" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/precedent.css" rel="stylesheet" />

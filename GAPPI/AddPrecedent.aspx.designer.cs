@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GAPPI_Demo
+namespace GAPPI
 {
 
 
