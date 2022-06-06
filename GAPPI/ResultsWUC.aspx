@@ -70,7 +70,6 @@
                 <h2>Results</h2>
                 <hr />
                     <asp:PlaceHolder ID="phResults" runat="server"></asp:PlaceHolder>
-                <hr />
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
                         <li class="page-item"><a class="page-link" href="#">Previous</a></li>
