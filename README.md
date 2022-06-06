@@ -8,7 +8,7 @@ Changes that need to be made
 - [ ] Make search result a custom ascx control that can be loaded dynamically
 - [ ] Add user profile page that shows a user's bookmarks
 - [ ] Normalize search bar between Results.aspx and Precedent.aspx
-- [ ] Add an admin page with a grid view that shows all precedents loaded in the system (admin can choose to delete)
+- [x] Add an admin page with a grid view that shows all precedents loaded in the system (admin can choose to delete)
 - [ ] Add About page
 - [ ] Add Contact page
 
