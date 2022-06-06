@@ -11,7 +11,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GAPPI_Demo</RootNamespace>
+    <RootNamespace>GAPPI</RootNamespace>
     <AssemblyName>GAPPI Demo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
@@ -95,7 +95,9 @@
     <Content Include="js\jquery-3.5.1.min.js" />
     <Content Include="Precedent.aspx" />
     <Content Include="Precedent_withImg.aspx" />
+    <Content Include="ResultsWUC.aspx" />
     <Content Include="Results.aspx" />
+    <Content Include="SearchResult.ascx" />
     <Content Include="Web.config" />
     <Content Include="AddPrecedent.aspx" />
   </ItemGroup>
@@ -136,6 +138,13 @@
       <DependentUpon>Precedent_withImg.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultsWUC.aspx.cs">
+      <DependentUpon>ResultsWUC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultsWUC.aspx.designer.cs">
+      <DependentUpon>ResultsWUC.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Results.aspx.cs">
       <DependentUpon>Results.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,6 +158,13 @@
     </Compile>
     <Compile Include="AddPrecedent.aspx.designer.cs">
       <DependentUpon>AddPrecedent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResult.ascx.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResult.ascx.designer.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
