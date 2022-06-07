@@ -23,7 +23,7 @@
         </div>
         <div class="search row w-100 mb-4">
             <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width: 100%;">
-            <asp:ImageButton CssClass="btnsearch" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" Style="height: 47.5px; position: absolute; right: 0;"
+            <asp:ImageButton CssClass="btnsearch rounded-end p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" Style="height: 47.5px; width: auto; position: absolute; right: 0;"
                 PostBackUrl="~/Results.aspx" />
         </div>
     </div>
