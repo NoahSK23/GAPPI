@@ -7,7 +7,7 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div class="container-fluid mb-3 mt-3">
+            <div class="container d-flex flex-column min-vh-100 mt-5">
                 <asp:GridView ID="gvAllPrecedents" runat="server" AutoGenerateColumns="False"
                     CssClass="table table-striped table-borded mydatatable">
                     <Columns>

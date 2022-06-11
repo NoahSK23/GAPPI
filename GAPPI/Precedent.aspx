@@ -6,20 +6,20 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="precedent" class="container-fluid w-100" style="text-align: center;">
-        <ul class="nav flex-nowrap justify-content-center align-middle mt-2 p-3">
+        <ul class="nav flex-nowrap mx-auto justify-content-center align-middle mt-2 p-3">
             <li class="nav-item px-lg-4">
                 <label id="lblSearch" style="text-align: left; font-weight: 900; font-size: 27px;">Search</label>
             </li>
             <li class="nav-item">
-                <asp:DropDownList CssClass="search" ID="ddlSeachField" runat="server" Style="width: 200px;">
-                    <asp:ListItem>All fields</asp:ListItem>
+                <asp:DropDownList CssClass="form-select search rounded-start" ID="ddlSeachField" runat="server" Style="width: 200px;">
+                    <asp:ListItem class="ps-1">All fields</asp:ListItem>
                 </asp:DropDownList>
             </li>
             <li class="nav-item">
-                <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width: 450px;">
+                <input class="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" style="width: 450px;">
             </li>
             <li class="nav-item">
-                <asp:ImageButton CssClass="search" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" />
+                <asp:ImageButton CssClass="search rounded-end" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" />
             </li>
             <li class="nav-item px-3">
                 <a class="nav-link" id="advancedSearch" href="#" style="color: #A41E35;">Advanced Search</a>

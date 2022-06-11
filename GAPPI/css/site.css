@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+html {
+    overflow-y: overlay;
+}
+
 body {
     font-family: NotoSans, sans-serif;
 }

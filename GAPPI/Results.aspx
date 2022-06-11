@@ -2,35 +2,35 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/results.css" rel="stylesheet" />
+    <link href="css/precedent.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="  text-drak p-3">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center ">
-
-                <h3 class="mb-2 mb-md-0 m-xl-2">Search</h3>
-                <div class="input-group">
-                    <input
-                        type="text"
-                        class="form-control"
-                        placeholder="All fields">
-                    <input type="text"
-                        class="form-control"
-                        placeholder="Search">
-                    <button class="btn btn-dark"
-                        type="button">
-                        Search</button>
-                </div>
-
-                <a class="  m-xl-3">Advanced Search</a>
-                <a class="  m-xl-2">Bookmark (0)</a>
-
-            </div>
-        </div>
-    </section>
-    <hr />
-
     <div class="container">
+        <ul class="nav justify-content-center align-middle mt-2 p-3">
+            <li class="nav-item px-lg-4">
+                <label id="lblSearch" style="text-align: left; font-weight: 900; font-size: 27px;">Search</label>
+            </li>
+            <li class="nav-item">
+                <asp:DropDownList CssClass="form-select search rounded-start" ID="ddlSeachField" runat="server" Style="width: 200px;">
+                    <asp:ListItem class="ps-1">All fields</asp:ListItem>
+                </asp:DropDownList>
+            </li>
+            <li class="nav-item">
+                <input class="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" style="width: 450px;">
+            </li>
+            <li class="nav-item">
+                <asp:ImageButton CssClass="search rounded-end" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" />
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" id="advancedSearch" href="#" style="color: #A41E35;">Advanced Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="bookmark" href="#" style="color: #A41E35;">Bookmark(0)</a>
+            </li>
+        </ul>
+    </div>
+    <div class="solid"></div>
+    <div class="container p-3">
         <div class="row">
             <div class="col-md-2 col-md-push-7">
                 <h5>Fields</h5>
