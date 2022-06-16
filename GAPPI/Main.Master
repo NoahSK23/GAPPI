@@ -10,6 +10,9 @@
     <%--Bootstrap CSS--%>
     <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
+    <%--Bootstrap Icons--%>
+    <link href="~/icons/bootstrap-icons-1.8.3/bootstrap-icons.css" rel="stylesheet" />
+    <%--Custom Scrollbar--%>
     <link href="~/css/customize-scrollbar.css" rel="stylesheet" />
     <title>GAPPI</title>
     <%--HEAD CONTENT--%>

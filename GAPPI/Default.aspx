@@ -2,6 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/home.css" rel="stylesheet" />
+    <style>
+    </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -21,10 +23,16 @@
         <div class="row">
             <h5 class="boldfont text-left mb-4">Search precedents, projects, designers, and more......</h5>
         </div>
-        <div class="search row w-100 mb-4">
-            <asp:TextBox ID="txtSearch" CssClass="search form-control w-100" type="search" placeholder="  Search" aria-label="Search" runat="server"></asp:TextBox>
-            <asp:ImageButton CssClass="btnsearch rounded-end p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" Style="height: 47.5px; width: auto; position: absolute; right: 0;"
-                PostBackUrl="~/ResultsWUC.aspx" />
+
+        <div class="row w-100 mb-4">
+            <div class="input-group input-group-lg">
+                <span class="input-group-text" style="z-index: 1; left: 0;">
+                    <span class="bi bi-search"></span>
+                </span>
+                <asp:TextBox ID="txtSearch" CssClass="form-control ps-2" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
+                <asp:ImageButton CssClass="btnsearch rounded-end p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" Style="height: 47.5px; width: auto; right: 0;"
+                    PostBackUrl="~/ResultsWUC.aspx" />
+            </div>
         </div>
     </div>
 </asp:Content>
