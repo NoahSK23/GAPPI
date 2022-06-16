@@ -38,32 +38,55 @@
             <div class="col-md-2 col-md-push-7">
                 <h5>Fields</h5>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                         Location
                     </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">
-                            <input type="checkbox" class="form-check-input">United States</a>
-                        <a class="dropdown-item" href="#">
-                            <input type="checkbox" class="form-check-input">
-                            Ireland</a>
-                        <a class="dropdown-item" href="#">
-                            <input type="checkbox" class="form-check-input">South Korea</a>
+                    <div class="dropdown-menu p-2">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck1">
+                            <label class="form-check-label" for="dropdownCheck1">
+                                United States
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                            <label class="form-check-label" for="dropdownCheck2">
+                                Ireland
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck3">
+                            <label class="form-check-label" for="dropdownCheck3">
+                                South Korea
+                            </label>
+
+                        </div>
                     </div>
                 </div>
                 <hr />
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownDates" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
                         Date
                     </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">
-                            <input type="checkbox" class="form-check-input">1900</a>
-                        <a class="dropdown-item" href="#">
-                            <input type="checkbox" class="form-check-input">
-                            1800</a>
-                        <a class="dropdown-item" href="#">
-                            <input type="checkbox" class="form-check-input">1850</a>
+                    <div class="dropdown-menu p-2">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dateCheck1">
+                            <label class="form-check-label" for="dateCheck1">
+                                1900
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dateCheck2">
+                            <label class="form-check-label" for="dateCheck2">
+                                1850
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dateCheck3">
+                            <label class="form-check-label" for="dateCheck3">
+                                1800
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
