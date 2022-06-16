@@ -9,14 +9,14 @@
         <div class="container">
             <div class="row justify-content-center align-middle mt-2 p-3">
                 <div class="col-md">
-                    <label id="lblSearch" class="h1 fw-bolder">Search</label>
+                    <label id="lblSearch" class="h1" style="font-weight: 900;">Search</label>
                 </div>
-                <div class="col-md-3 pe-0">
+                <div class="col-md-3 p-0">
                     <asp:DropDownList CssClass="form-select search rounded-start me-0" ID="ddlSeachField" runat="server">
                         <asp:ListItem class="ps-1">All fields</asp:ListItem>
                     </asp:DropDownList>
                 </div>
-                <div class="col-md-4 search ps-0">
+                <div class="col-md-4 search p-0">
                     <div class="input-group">
                         <asp:TextBox ID="txtSearch" CssClass="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
                         <asp:ImageButton CssClass="input-group-text w-auto p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" Style="height: 47.5px;" />
@@ -31,7 +31,6 @@
             </div>
         </div>
         <div class="solid mb-4"></div>
-
         <div class="d-flex justify-content-center flex-column align-items-center mt-1">
             <div class="d-flex justify-content-between w-75">
                 <div style="text-align: left;">

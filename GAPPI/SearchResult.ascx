@@ -5,7 +5,7 @@
             <asp:HiddenField ID="hfPrecedentID" runat="server" />
             <div class="col-sm-9">
                 <h4 class="search-result-item-heading" style="color: #A41E35;">
-                    <asp:Label ID="lblTitle" CssClass="fw-bolder" runat="server" Text=""></asp:Label></h4>
+                    <asp:Label ID="lblTitle" CssClass="" Style="font-weight: 900;" runat="server" Text=""></asp:Label></h4>
             </div>
             <div class="col-sm-9">
                 <dl class="row">

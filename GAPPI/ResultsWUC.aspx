@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row justify-content-center align-middle mt-2 p-3">
             <div class="col-md">
-                <label id="lblSearch" class="h1 fw-bolder">Search</label>
+                <label id="lblSearch" class="h1" style="font-weight: 900;">Search</label>
             </div>
             <div class="col-md-3 p-0">
                 <asp:DropDownList CssClass="form-select search rounded-start me-0" ID="ddlSeachField" runat="server">
@@ -92,7 +92,7 @@
             </div>
 
             <div class="col-md-9 col-md-pull-3">
-                <h2 class="fw-bolder">Results</h2>
+                <h2 style="font-weight: 900;">Results</h2>
                 <hr />
                 <asp:PlaceHolder ID="phResults" runat="server"></asp:PlaceHolder>
                 <nav aria-label="Page navigation example">
