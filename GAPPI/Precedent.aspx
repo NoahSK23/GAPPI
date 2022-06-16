@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="pt-3">
-                    <asp:Button CssClass="padding" ID="btnVisitSite" runat="server" Text="Visit the site" BorderStyle="NotSet" BackColor="#222222" ForeColor="White" />
+                    <asp:Button CssClass="py-2 px-3" ID="btnVisitSite" runat="server" Text="Visit the site" BorderStyle="NotSet" BackColor="#222222" ForeColor="White" />
                 </div>
             </div>
         </div>

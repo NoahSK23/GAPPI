@@ -34,7 +34,7 @@
                             <a class="nav-link" href="Default.aspx">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Results.aspx">Precedent</a>
+                            <a class="nav-link" href="ResultsWUC.aspx">Precedent</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Admin.aspx">Admin</a>

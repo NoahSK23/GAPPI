@@ -22,9 +22,9 @@
             <h5 class="boldfont text-left mb-4">Search precedents, projects, designers, and more......</h5>
         </div>
         <div class="search row w-100 mb-4">
-            <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width: 100%;">
+            <asp:TextBox ID="txtSearch" CssClass="search form-control w-100" type="search" placeholder="  Search" aria-label="Search" runat="server"></asp:TextBox>
             <asp:ImageButton CssClass="btnsearch rounded-end p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" Style="height: 47.5px; width: auto; position: absolute; right: 0;"
-                PostBackUrl="~/Results.aspx" />
+                PostBackUrl="~/ResultsWUC.aspx" />
         </div>
     </div>
 </asp:Content>

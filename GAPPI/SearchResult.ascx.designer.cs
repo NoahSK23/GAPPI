@@ -69,6 +69,15 @@ namespace GAPPI
         protected global::System.Web.UI.WebControls.Label lblSuggestedBy;
 
         /// <summary>
+        /// btnVisitSite control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVisitSite;
+
+        /// <summary>
         /// hypPrecedent control.
         /// </summary>
         /// <remarks>
