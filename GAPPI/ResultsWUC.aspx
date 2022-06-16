@@ -36,7 +36,7 @@
     <div class="container p-3">
         <div class="row">
             <div class="col-md-2 col-md-push-7">
-                <h5>Fields</h5>
+                <h5 class="small fw-bolder">Refine your search</h5>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                         Location
@@ -65,7 +65,7 @@
                 </div>
                 <hr />
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownDates" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+                    <button class="btn btn-secondary  dropdown-toggle" type="button" id="dropdownDates" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
                         Date
                     </button>
                     <div class="dropdown-menu p-2">
@@ -92,7 +92,7 @@
             </div>
 
             <div class="col-md-9 col-md-pull-3">
-                <h2>Results</h2>
+                <h2 class="fw-bolder">Results</h2>
                 <hr />
                 <asp:PlaceHolder ID="phResults" runat="server"></asp:PlaceHolder>
                 <nav aria-label="Page navigation example">

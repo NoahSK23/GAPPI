@@ -9,17 +9,17 @@
             </div>
             <div class="col-sm-9">
                 <dl class="row">
-                    <dt class="col-sm-2 text-secondary">Location: </dt>
-                    <dd class="col-sm-9">
+                    <dt class="col-lg-2 text-secondary text-lg-end">Location: </dt>
+                    <dd class="col-lg-9">
                         <asp:Label ID="lblLocation" runat="server" Text=""></asp:Label></dd>
-                    <dt class="col-sm-2 text-secondary">Date: </dt>
-                    <dd class="col-sm-9">
+                    <dt class="col-lg-2 text-secondary text-lg-end">Date: </dt>
+                    <dd class="col-lg-9">
                         <asp:Label ID="lblDate" runat="server" Text=""></asp:Label></dd>
-                    <dt class="col-sm-2 text-secondary">Designer: </dt>
-                    <dd class="col-sm-9">
+                    <dt class="col-lg-2 text-secondary text-lg-end">Designer: </dt>
+                    <dd class="col-lg-9">
                         <asp:Label ID="lblDesigner" runat="server" Text=""></asp:Label></dd>
-                    <dt class="col-sm-2 text-secondary">Suggested By: </dt>
-                    <dd class="col-sm-9">
+                    <dt class="col-lg-2 text-secondary text-lg-end">Suggested By: </dt>
+                    <dd class="col-lg-9">
                         <asp:Label ID="lblSuggestedBy" runat="server" Text=""></asp:Label></dd>
                 </dl>
                 <div class="">
@@ -29,8 +29,11 @@
                     </asp:HyperLink>
                 </div>
             </div>
-            <div class="col-sm-3 text-align-center">
-                <p class="value3 mt-sm">Bookmark</p>
+            <div class="col-sm-3 text-align-center text-xl-end mt-sm-1">
+                <div class="m-sm medium">
+                    <asp:Image ID="imgBookmark" runat="server" ImageUrl="~/Images/Bookmark.png" CssClass="img-fluid" AlternateText="Bookmark img" Height="20" />
+                    Bookmark
+                </div>
                 <a class="image-link" href="#">
                     <img class="image" src="sp.png">
                 </a>
