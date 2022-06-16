@@ -8,12 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <%-- Bootstrap CSS --%>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/site.css" rel="stylesheet" />
-    <link href="css/customize-scrollbar.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/customize-scrollbar.css" rel="stylesheet" />
     <%-- jQuery --%>
     <script src="js/jquery-3.5.1.min.js"></script>
-
     <title>GAPPI</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -72,8 +71,8 @@
     <%-- FOOTER --%>
     <footer class="mt-auto">
         <div class="d-none d-md-block">
-            <img src="/Images/TULogo.png" class="img-fluid float-start p-2 ps-5" alt="Temple University" />
-            <img src="/Images/Tylerart2 1.png" class="img-fluid float-end pt-3 pe-5 mb-0" alt="Tyler Art + Architecture" />
+            <asp:Image ID="imgTempleLogo" runat="server" CssClass="img-fluid float-start p-2 ps-5" AlternateText="Temple University" ImageUrl="~/Images/TULogo.png" />
+            <asp:Image ID="imgTylerLogo" runat="server" CssClass="img-fluid float-end pt-3 pe-5 mb-0" AlternateText="Tyler Art + Architecture" ImageUrl="~/Images/Tylerart2 1.png" />
         </div>
     </footer>
     <%-- Bootstrap bundle--%>

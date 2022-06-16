@@ -6,28 +6,28 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <ul class="nav justify-content-center align-middle mt-2 p-3">
-            <li class="nav-item px-lg-4">
-                <label id="lblSearch" style="text-align: left; font-weight: 900; font-size: 27px;">Search</label>
-            </li>
-            <li class="nav-item">
-                <asp:DropDownList CssClass="form-select search rounded-start" ID="ddlSeachField" runat="server" Style="width: 200px;">
+        <div class="row justify-content-center align-middle mt-2 p-3">
+            <div class="col-md">
+                <label id="lblSearch" class="h1 fw-bolder">Search</label>
+            </div>
+            <div class="col-md-3 p-0">
+                <asp:DropDownList CssClass="form-select search rounded-start me-0" ID="ddlSeachField" runat="server">
                     <asp:ListItem class="ps-1">All fields</asp:ListItem>
                 </asp:DropDownList>
-            </li>
-            <li class="nav-item">
-                <input class="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" style="width: 450px;">
-            </li>
-            <li class="nav-item">
-                <asp:ImageButton CssClass="search rounded-end" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" />
-            </li>
-            <li class="nav-item px-3">
+            </div>
+            <div class="col-md-4 search p-0">
+                <div class="input-group">
+                    <asp:TextBox ID="txtSearch" CssClass="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
+                    <asp:ImageButton CssClass="input-group-text w-auto p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" Style="height: 47.5px;" />
+                </div>
+            </div>
+            <div class="col-lg-1 text-center">
                 <a class="nav-link" id="advancedSearch" href="#" style="color: #A41E35;">Advanced Search</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="bookmark" href="#" style="color: #A41E35;">Bookmark(0)</a>
-            </li>
-        </ul>
+            </div>
+            <div class="col-lg-1 text-center">
+                <a class="nav-link" id="bookmark" href="#" style="color: #A41E35;">Bookmarks (0)</a>
+            </div>
+        </div>
     </div>
     <div class="solid"></div>
     <div class="container p-3">
