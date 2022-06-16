@@ -21,7 +21,8 @@
             </div>
         </ContentTemplate>
     </asp:UpdatePanel>
-
+</asp:Content>
+<asp:Content ID="scripts" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
 
     <script>

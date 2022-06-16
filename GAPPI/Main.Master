@@ -11,8 +11,6 @@
     <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
     <link href="~/css/customize-scrollbar.css" rel="stylesheet" />
-    <%-- jQuery --%>
-    <script src="js/jquery-3.5.1.min.js"></script>
     <title>GAPPI</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -75,6 +73,8 @@
             <asp:Image ID="imgTylerLogo" runat="server" CssClass="img-fluid float-end pt-3 pe-5 mb-0" AlternateText="Tyler Art + Architecture" ImageUrl="~/Images/Tylerart2 1.png" />
         </div>
     </footer>
+    <%-- jQuery --%>
+    <script src="js/jquery-3.5.1.min.js"></script>
     <%-- Bootstrap bundle--%>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <%-- Changes active link in navbar --%>
@@ -89,5 +89,7 @@
             });
         });
     </script>
+    <%-- SCRIPTS --%>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>
