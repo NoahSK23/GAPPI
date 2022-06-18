@@ -30,3 +30,20 @@
     min-height: calc(100% - 56px);
     padding-top: 7rem;
 }
+
+.input-group-prepend .input-group-text {
+    background-color: transparent;
+}
+
+.input-group-text{
+    background-color: transparent!important;
+    border-right: 0!important;
+}
+
+.form-control{
+    border-inline-start: 0!important;
+}
+
+.input-group-prepend input {
+    border-left: 0;
+}

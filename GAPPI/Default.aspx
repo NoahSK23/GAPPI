@@ -29,7 +29,7 @@
                 <span class="input-group-text" style="z-index: 1; left: 0;">
                     <span class="bi bi-search"></span>
                 </span>
-                <asp:TextBox ID="txtSearch" CssClass="form-control ps-2" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtSearch" CssClass="form-control p-0" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
                 <asp:ImageButton CssClass="btnsearch rounded-end p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" Style="height: 47.5px; width: auto; right: 0;"
                     PostBackUrl="~/ResultsWUC.aspx" />
             </div>
