@@ -50,7 +50,7 @@
                         <asp:LinkButton ID="btnModifyPage" CssClass="btn btn-primary border-danger" runat="server" PostBackUrl="~/AddPrecedent.aspx">Modify Precedent</asp:LinkButton>
                     </div>
                         <div>
-                            <button type="button" class="btn btn-primary border-danger">Delete Precedent</button>
+                            <button type="button" data-bs-target="#deleteModal" data-bs-toggle="modal" class="btn btn-primary border-danger">Delete Precedent</button>
                         </div>
                     </div>
                 </div>
@@ -60,6 +60,24 @@
             </div>
         </div>
     </div>
+    <!-- Second Confirmation Delete Modal -->
+    <div class="modal fade" id="deleteModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel2">Confirm Deletion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body alert alert-danger fw-bolder">
+        Are you sure you want to delete this precedent?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary border-danger" data-bs-dismiss="modal">Delete</button>
+        <button class="btn btn-secondary" type="button" data-bs-target="#modifyModal" data-bs-toggle="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
