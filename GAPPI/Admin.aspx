@@ -10,7 +10,7 @@
         <ContentTemplate>
             <div class="container d-flex flex-column">
                 <h1 class="fw-bold pt-4">Admin Page</h1>
-                <div class="mb-5"></div>
+                <div class="mb-4"></div>
                 <asp:GridView ID="gvAllPrecedents" runat="server" AutoGenerateColumns="False"
                     CssClass="table table-striped table-borded mydatatable table-hover">
                     <Columns>
@@ -28,6 +28,7 @@
                     <HeaderStyle BackColor="#A41E35" ForeColor="White" />
                 </asp:GridView>
             </div>
+            <div class="pt-3"></div>
         </ContentTemplate>
     </asp:UpdatePanel>
     <!-- Modal -->
