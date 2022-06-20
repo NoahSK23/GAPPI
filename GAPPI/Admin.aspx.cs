@@ -30,10 +30,62 @@ namespace GAPPI
                         new GAPPIClassLibrary.Precedent
                         {
                             Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },
+                        new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },
+                        new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
+                        },new GAPPIClassLibrary.Precedent
+                        {
+                            Title = "Casa de Vidro", Location = "Sao Paulo, Brazil", Date = "1951", Designer = "Lena Bo Bardi"
                         }
                     };
                 gvAllPrecedents.DataSource = precedents;
                 gvAllPrecedents.DataBind();
+                gvAllPrecedents.UseAccessibleHeader = true;
+                gvAllPrecedents.HeaderRow.TableSection = TableRowSection.TableHeader;
+            }
+            else
+            {
                 gvAllPrecedents.UseAccessibleHeader = true;
                 gvAllPrecedents.HeaderRow.TableSection = TableRowSection.TableHeader;
             }
