@@ -49,7 +49,7 @@ namespace GAPPI
                         phResults.Controls.Add(ctrl);
                     }
                 }
-                else
+                else //no reults found
                 {
                     Label lblNoneFound = new Label();
                     lblNoneFound.Text = "No precedents found. Search Again.";

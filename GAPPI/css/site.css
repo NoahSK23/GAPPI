@@ -20,7 +20,7 @@
 }
 
 html {
-    overflow-y: overlay;
+    /*overflow-y: scroll;*/
 }
 
 body {

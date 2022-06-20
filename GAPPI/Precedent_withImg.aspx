@@ -19,7 +19,7 @@
                 <div class="col-md-4 search p-0">
                     <div class="input-group">
                         <asp:TextBox ID="txtSearch" CssClass="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
-                        <asp:ImageButton CssClass="input-group-text w-auto p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" Style="height: 47.5px;" />
+                        <asp:ImageButton CssClass="input-group-text w-auto p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/ResultsWUC.aspx" Style="height: 47.5px;" />
                     </div>
                 </div>
                 <div class="col-lg-1 text-center">
@@ -35,7 +35,7 @@
         <div class="d-flex justify-content-center flex-column align-items-center mt-1">
             <div class="d-flex justify-content-between w-75">
                 <div style="text-align: left;">
-                    <asp:LinkButton ID="btnBack" runat="server" ForeColor="#222222" PostBackUrl="~/Results.aspx">
+                    <asp:LinkButton ID="btnBack" runat="server" ForeColor="#222222" PostBackUrl="~/ResultsWUC.aspx">
                         <img class="pr-2" src="/Images/BackArrow.png" height="13">
                         Back
                     </asp:LinkButton>
