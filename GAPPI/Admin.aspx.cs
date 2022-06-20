@@ -84,6 +84,11 @@ namespace GAPPI
                 gvAllPrecedents.UseAccessibleHeader = true;
                 gvAllPrecedents.HeaderRow.TableSection = TableRowSection.TableHeader;
             }
+            else
+            {
+                gvAllPrecedents.UseAccessibleHeader = true;
+                gvAllPrecedents.HeaderRow.TableSection = TableRowSection.TableHeader;
+            }
         }
     }
 }

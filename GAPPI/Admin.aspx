@@ -9,7 +9,12 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <div class="container">
-                <h1 class="pt-4" style="font-weight: 900">Admin Page</h1>
+                <div class="row pt-4">
+                    <h1 class="col" style="font-weight: 900">Admin Page</h1>
+                    <div class="col pt-1 text-end">
+                        <asp:LinkButton ID="btnAddPrecedent" runat="server" CssClass="btn btn-lg btn-secondary border-dark" PostBackUrl="~/AddPrecedent.aspx"><i class="bi bi-plus"></i>Add Precedent</asp:LinkButton>
+                    </div>
+                </div>
                 <div class="mb-4"></div>
                 <asp:GridView ID="gvAllPrecedents" runat="server" AutoGenerateColumns="False"
                     CssClass="table table-striped table-borded table-hover w-100">
@@ -28,7 +33,8 @@
                     <HeaderStyle BackColor="#A41E35" ForeColor="White" />
                 </asp:GridView>
             </div>
-            <div class="pt-3"></div>
+            <div class="pt-3">
+            </div>
         </ContentTemplate>
     </asp:UpdatePanel>
     <!-- Modal -->
