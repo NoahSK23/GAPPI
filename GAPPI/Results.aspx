@@ -2,35 +2,35 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/results.css" rel="stylesheet" />
+    <link href="css/precedent.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section class="  text-drak p-3">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center ">
-
-                <h3 class="mb-2 mb-md-0 m-xl-2">Search</h3>
+    <div class="container">
+        <div class="row justify-content-center align-middle mt-2 p-3">
+            <div class="col-md">
+                <label id="lblSearch" class="h1" style="font-weight: 900;">Search</label>
+            </div>
+            <div class="col-md-3 p-0">
+                <asp:DropDownList CssClass="form-select search rounded-start me-0" ID="ddlSeachField" runat="server">
+                    <asp:ListItem class="ps-1">All fields</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div class="col-md-4 search p-0">
                 <div class="input-group">
-                    <input
-                        type="text"
-                        class="form-control"
-                        placeholder="All fields">
-                    <input type="text"
-                        class="form-control"
-                        placeholder="Search">
-                    <button class="btn btn-dark"
-                        type="button">
-                        Search</button>
+                    <asp:TextBox ID="txtSearch" CssClass="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
+                    <asp:ImageButton CssClass="input-group-text w-auto p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" Style="height: 47.5px;" />
                 </div>
-
-                <a class="  m-xl-3">Advanced Search</a>
-                <a class="  m-xl-2">Bookmark (0)</a>
-
+            </div>
+            <div class="col-lg-1 text-center">
+                <a class="nav-link" id="advancedSearch" href="#" style="color: #A41E35;">Advanced Search</a>
+            </div>
+            <div class="col-lg-1 text-center">
+                <a class="nav-link" id="bookmark" href="#" style="color: #A41E35;">Bookmarks (0)</a>
             </div>
         </div>
-    </section>
-    <hr />
-
-    <div class="container">
+    </div>
+    <div class="solid"></div>
+    <div class="container p-3">
         <div class="row">
             <div class="col-md-2 col-md-push-7">
                 <h5>Fields</h5>

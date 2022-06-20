@@ -5,17 +5,19 @@
 .container {
     color: #222222;
     font-size: 16px;
-    padding: 100px;
 }
 
 .search {
     margin: 0;
-    padding: 0;
     height: 47.5px;
 }
 
 .padding {
     padding: 8px 16px;
+}
+
+.form-select {
+    border-radius: 0;
 }
 
 #flexcontainer {

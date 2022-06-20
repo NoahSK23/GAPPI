@@ -5,35 +5,36 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="precedent" class="container-fluid w-100" style="text-align: center;">
-        <ul class="nav flex-nowrap justify-content-center align-middle mt-2 p-3">
-            <li class="nav-item px-lg-4">
-                <label id="lblSearch" style="text-align: left; font-weight: 900; font-size: 27px;">Search</label>
-            </li>
-            <li class="nav-item">
-                <asp:DropDownList CssClass="search" ID="ddlSeachField" runat="server" Style="width: 200px;">
-                    <asp:ListItem>All fields</asp:ListItem>
-                </asp:DropDownList>
-            </li>
-            <li class="nav-item">
-                <input class="search form-control" type="search" placeholder="  Search" aria-label="Search" style="width: 450px;">
-            </li>
-            <li class="nav-item">
-                <asp:ImageButton CssClass="search" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/Results.aspx" />
-            </li>
-            <li class="nav-item px-3">
-                <a class="nav-link" id="advancedSearch" href="#" style="color: #A41E35;">Advanced Search</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="bookmark" href="#" style="color: #A41E35;">Bookmark(0)</a>
-            </li>
-        </ul>
+    <div id="precedent" class="container-fluid w-100">
+        <div class="container">
+            <div class="row justify-content-center align-middle mt-2 p-3">
+                <div class="col-md">
+                    <label id="lblSearch" class="h1" style="font-weight: 900;">Search</label>
+                </div>
+                <div class="col-md-3 p-0">
+                    <asp:DropDownList CssClass="form-select search rounded-start me-0" ID="ddlSeachField" runat="server">
+                        <asp:ListItem class="ps-1">All fields</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+                <div class="col-md-4 search p-0">
+                    <div class="input-group">
+                        <asp:TextBox ID="txtSearch" CssClass="search form-control rounded-0" type="search" placeholder="Search" aria-label="Search" runat="server"></asp:TextBox>
+                        <asp:ImageButton CssClass="input-group-text w-auto p-0" ID="btnSearch" runat="server" ImageUrl="~/Images/SearchArrow.png" PostBackUrl="~/ResultsWUC.aspx" Style="height: 47.5px;" />
+                    </div>
+                </div>
+                <div class="col-lg-1 text-center">
+                    <a class="nav-link" id="advancedSearch" href="#" style="color: #A41E35;">Advanced Search</a>
+                </div>
+                <div class="col-lg-1 text-center">
+                    <a class="nav-link" id="bookmark" href="#" style="color: #A41E35;">Bookmarks (0)</a>
+                </div>
+            </div>
+        </div>
         <div class="solid mb-4"></div>
-
         <div class="d-flex justify-content-center flex-column align-items-center mt-1">
             <div class="d-flex justify-content-between w-75">
                 <div style="text-align: left;">
-                    <asp:LinkButton ID="btnBack" runat="server" ForeColor="#222222" PostBackUrl="~/Results.aspx">
+                    <asp:LinkButton ID="btnBack" runat="server" ForeColor="#222222" PostBackUrl="~/ResultsWUC.aspx">
                         <img class="pr-2" src="/Images/BackArrow.png" height="13">
                         Back
                     </asp:LinkButton>
@@ -90,7 +91,7 @@
                 </div>
 
                 <div class="pt-3">
-                    <asp:Button CssClass="padding" ID="btnVisitSite" runat="server" Text="Visit the site" BorderStyle="NotSet" BackColor="#222222" ForeColor="White" />
+                    <asp:Button CssClass="py-2 px-3" ID="btnVisitSite" runat="server" Text="Visit the site" BorderStyle="NotSet" BackColor="#222222" ForeColor="White" />
                 </div>
             </div>
         </div>
