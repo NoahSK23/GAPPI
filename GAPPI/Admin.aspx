@@ -86,15 +86,17 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
 
     <script>
+        //makes table a Data Table
         $(document).ready(function () {
-            const oTable = $('#gvAllPrecedents').DataTable();
+            $('#gvAllPrecedents').DataTable();
         });
-
+        //makes table clickable
         $('#gvAllPrecedents').on('click', 'tbody tr', function () {
             var currentRowData = $(this).closest("tr").find("td").map(function () {
                 return $(this).text();
             }).get();
 
+            //fills in table labels with information
             $('#modifyModal').modal('toggle');
             $('#modifyModalLabel').text(currentRowData[0]);
             $('#lblLocation').text(currentRowData[1]);
