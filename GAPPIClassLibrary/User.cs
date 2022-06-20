@@ -10,7 +10,9 @@ namespace GAPPIClassLibrary
     {
         public int UserID { get; set; }
         public int TUID { get; set; }
+        public int RoleID { get; set; }
         public string CommonName { get; set; }
+        public string Email { get; set; }
         public bool IsAdmin { get; set; } = false;
     }
 }
