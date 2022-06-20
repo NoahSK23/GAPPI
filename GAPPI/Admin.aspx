@@ -8,19 +8,19 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div class="container d-flex flex-column">
-                <h1 class="fw-bold pt-4">Admin Page</h1>
+            <div class="container">
+                <h1 class="pt-4" style="font-weight: 900">Admin Page</h1>
                 <div class="mb-4"></div>
                 <asp:GridView ID="gvAllPrecedents" runat="server" AutoGenerateColumns="False"
-                    CssClass="table table-striped table-borded mydatatable table-hover">
+                    CssClass="table table-striped table-borded table-hover w-100">
                     <Columns>
-                        <asp:BoundField DataField="PrecedentID" HeaderText="PrecedentID" >
-                        <ControlStyle CssClass="d-none" />
-                        <FooterStyle CssClass="d-none" />
-                        <HeaderStyle CssClass="d-none" />
-                        <ItemStyle CssClass="d-none" />
-                        </asp:BoundField>
                         <asp:BoundField DataField="Title" HeaderText="Title" />
+                        <asp:BoundField DataField="PrecedentID" HeaderText="PrecedentID">
+                            <ControlStyle CssClass="d-none" />
+                            <FooterStyle CssClass="d-none" />
+                            <HeaderStyle CssClass="d-none" />
+                            <ItemStyle CssClass="d-none" />
+                        </asp:BoundField>
                         <asp:BoundField DataField="Location" HeaderText="Location" />
                         <asp:BoundField DataField="Date" HeaderText="Date" />
                         <asp:BoundField DataField="Designer" HeaderText="Designer" />
@@ -107,8 +107,8 @@
 
             //fills in table labels with information
             $('#modifyModal').modal('toggle');
-            console.log('PrecedentID: ', currentRowData[0]);
-            $('#modifyModalLabel').text(currentRowData[1]);
+            console.log('PrecedentID: ', currentRowData[1]);
+            $('#modifyModalLabel').text(currentRowData[0]);
             $('#lblLocation').text(currentRowData[2]);
             $('#lblDate').text(currentRowData[3]);
             $('#lblDesigner').text(currentRowData[4]);

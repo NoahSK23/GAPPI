@@ -5,3 +5,6 @@
     .btn-primary:hover {
         background-color: #8A2432!important;
     }
+table tbody tr {
+    cursor: pointer;
+}
