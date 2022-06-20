@@ -2,12 +2,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.css" />
+    <link href="css/admin.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div class="container d-flex flex-column min-vh-100 mt-5">
+            <div class="container d-flex flex-column mt-5 pt-5">
                 <asp:GridView ID="gvAllPrecedents" runat="server" AutoGenerateColumns="False"
                     CssClass="table table-striped table-borded mydatatable table-hover">
                     <Columns>
@@ -22,25 +23,45 @@
         </ContentTemplate>
     </asp:UpdatePanel>
     <!-- Modal -->
-        <div class="modal fade" id="modifyModal" tabindex="-1" aria-labelledby="Modify Modal" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="modifyModal" tabindex="-1" aria-labelledby="Modify Modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bolder" id="modifyModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="p-3 col">
+                    <label class="row">
+                        Location:
+                        <label id="lblLocation"></label>
+                    </label>
+                    <label class="row">
+                        Date:
+                        <label id="lblDate"></label>
+                    </label>
+                    <label class="row">
+                        Designer:
+                        <label id="lblDesigner"></label>
+                    </label>
+                        </div>
+                    <div class="d-flex justify-content-center">
+                    <div class="pe-4">
+                        <asp:LinkButton ID="btnModifyPage" CssClass="btn btn-primary border-danger" runat="server" PostBackUrl="~/AddPrecedent.aspx">Modify Precedent</asp:LinkButton>
+                    </div>
+                        <div>
+                            <button type="button" class="btn btn-primary border-danger">Delete Precedent</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
 </asp:Content>
-<asp:Content ID="scripts" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
 
     <script>
@@ -53,7 +74,11 @@
                 return $(this).text();
             }).get();
 
-            $("#modifyModal").modal('toggle');
+            $('#modifyModal').modal('toggle');
+            $('#modifyModalLabel').text(currentRowData[0]);
+            $('#lblLocation').text(currentRowData[1]);
+            $('#lblDate').text(currentRowData[2]);
+            $('#lblDesigner').text(currentRowData[3]);
         });
     </script>
 </asp:Content>

@@ -90,6 +90,7 @@
     <Content Include="bootstrap\js\bootstrap.esm.min.js" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="css\admin.css" />
     <Content Include="css\customize-scrollbar.css" />
     <Content Include="css\home.css" />
     <Content Include="css\precedent.css" />
