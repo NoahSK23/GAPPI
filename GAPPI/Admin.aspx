@@ -31,19 +31,22 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="p-3 col">
-                    <label class="row">
-                        Location:
+                    <div class="px-3 pb-3 col">
+                        <div>
+                    <label class="fw-bold">
+                        Location:</label>
                         <label id="lblLocation"></label>
-                    </label>
-                    <label class="row">
-                        Date:
+                            </div>
+                    <div>
+                    <label class="fw-bold">
+                        Date:</label>
                         <label id="lblDate"></label>
-                    </label>
-                    <label class="row">
-                        Designer:
+                    </div>
+                        <div>
+                    <label class="fw-bold">
+                        Designer:</label>
                         <label id="lblDesigner"></label>
-                    </label>
+                            </div>
                         </div>
                     <div class="d-flex justify-content-center">
                     <div class="pe-4">
@@ -65,7 +68,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="deleteModalLabel2">Confirm Deletion</h5>
+        <h5 class="modal-title fw-bolder" id="deleteModalLabel2">Confirm Deletion</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body alert alert-danger fw-bolder">
