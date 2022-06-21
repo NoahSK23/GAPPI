@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.HtmlControls;
 using GAPPIClassLibrary;
 
 namespace GAPPI
@@ -17,15 +16,13 @@ namespace GAPPI
             {
                 User user = new User();
                 user.CommonName = "Noah Klinger";
-                user.RoleID = 3; //1 is student, 2 is faculty, 3 is Admin.
+                user.IsAdmin = true;
                 if (!user.IsAdmin)
                 {
-                    HtmlControl control = FindControl("adminLink") as HtmlControl;
-                    control.Attributes.Add("class", "d-none");
-                    HtmlControl control1 = FindControl("addPrecedent") as HtmlControl;
-                    control1.Attributes.Add("class", "d-none");
-                    hypUser.Text = user.CommonName;
+                    adminLink.Visible = false;
+                    addPrecedent.Visible = false;
                 }
+                hypUser.Text = user.CommonName;
             }
         }
     }

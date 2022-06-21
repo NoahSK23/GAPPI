@@ -14,8 +14,8 @@ namespace GAPPI
         {
             if (Page.IsPostBack)
             {
-                //HtmlControl active = FindControl("home") as HtmlControl; another way to make link active... can use this or js method
-                //active.Attributes.Add("class", "nav-link active");
+                HtmlControl active = Master.FindControl("home") as HtmlControl; //another way to make link active... can use this or js method
+                active.Attributes.Add("class", "nav-link active");
             }
         }
     }
