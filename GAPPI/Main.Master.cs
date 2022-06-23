@@ -16,11 +16,18 @@ namespace GAPPI
             {
                 User user = new User();
                 user.CommonName = "Noah Klinger";
-                user.IsAdmin = true;
-                if (!user.IsAdmin)
+                user.RoleID = 2;
+                switch (user.RoleID)
                 {
-                    adminLink.Visible = false;
-                    addPrecedent.Visible = false;
+                    case 1:     //student
+                        adminLink.Visible = false;
+                        addPrecedent.Visible = false;
+                        break;
+                    case 2:     //faculty - can only see add button
+                        adminLink.Visible = false;
+                        break;
+                    default:    //admin - can see everything
+                        break;
                 }
                 hypUser.Text = user.CommonName;
             }
