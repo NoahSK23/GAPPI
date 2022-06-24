@@ -5,8 +5,9 @@
     <link href="css/admin.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:HiddenField ID="hdnID" runat="server" />
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <div class="container">
                 <div class="row pt-4">
@@ -36,6 +37,9 @@
             <div class="pt-3">
             </div>
         </ContentTemplate>
+        <Triggers>
+            <asp:AsyncPostBackTrigger ControlID="btnDelete" EventName="ServerClick" />
+        </Triggers>
     </asp:UpdatePanel>
     <!-- Modal -->
     <div class="modal fade" id="modifyModal" tabindex="-1" aria-labelledby="Modify Modal" aria-hidden="true">
@@ -90,7 +94,7 @@
                     Are you sure you want to delete this precedent?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary border-danger" data-bs-dismiss="modal">Delete</button>
+                    <button type="button" class="btn btn-primary border-danger" id="btnDelete" data-bs-dismiss="modal" runat="server" onserverclick="btnDeleteTest_Click">Delete</button>
                     <button class="btn btn-secondary" type="button" data-bs-target="#modifyModal" data-bs-toggle="modal">Cancel</button>
                 </div>
             </div>
@@ -102,18 +106,30 @@
 
     <script>
         //makes table a Data Table
-        $(document).ready(function () {
-            $('#gvAllPrecedents').DataTable();
+        //$(document).ready(function () {
+        //    $('#gvAllPrecedents').DataTable();
+        //});
+        //rebind datatable on async postback
+        $(function () {
+            bindDataTable();
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(bindDataTable);
         });
+        function bindDataTable() {
+            var myDT = $('#gvAllPrecedents').DataTable({
+                "saveState": true
+            });
+        }
         //makes table clickable
-        $('#gvAllPrecedents').on('click', 'tbody tr', function () {
+        $(document).on('click', 'tbody tr', function () {
             var currentRowData = $(this).closest("tr").find("td").map(function () {
                 return $(this).text();
             }).get();
+            console.log('clicked');
 
             //fills in table labels with information
             $('#modifyModal').modal('toggle');
             console.log('PrecedentID: ', currentRowData[1]);
+            $('#hdnID').val(currentRowData[1]);
             $('#modifyModalLabel').text(currentRowData[0]);
             $('#lblLocation').text(currentRowData[2]);
             $('#lblDate').text(currentRowData[3]);
