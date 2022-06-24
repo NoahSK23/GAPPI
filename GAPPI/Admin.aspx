@@ -107,7 +107,7 @@
     <script>
         //makes table a Data Table
         //$(document).ready(function () {
-        //    var table = $('#gvAllPrecedents').DataTable();
+        //$('#gvAllPrecedents').DataTable();
         //});
         //rebind datatable on async postback
         $(function () {
