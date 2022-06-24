@@ -107,7 +107,7 @@
     <script>
         //makes table a Data Table
         //$(document).ready(function () {
-        //    $('#gvAllPrecedents').DataTable();
+        //    var table = $('#gvAllPrecedents').DataTable();
         //});
         //rebind datatable on async postback
         $(function () {
@@ -115,9 +115,10 @@
             Sys.WebForms.PageRequestManager.getInstance().add_endRequest(bindDataTable);
         });
         function bindDataTable() {
-            var myDT = $('#gvAllPrecedents').DataTable({
-                "saveState": true
+            var table = $('#gvAllPrecedents').DataTable({
+                stateSave: true,
             });
+            table.draw(false);
         }
         //makes table clickable
         $(document).on('click', 'tbody tr', function () {
